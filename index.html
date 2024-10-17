@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-5.3.3/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/bootstrap-5.3.3/dist/css/bootstrap-grid.min.css">
     <title>Météo</title>
 </head>
+
 <body>
-    
+
+    <h1 class="bg-body-tertiary text-bg-success d-flex justify-content-center text-align-center text-success">
+        Météo du jour:</h1>
+
+    <section>
+        <article class="container row justify-content-center col-12 col-sm-6 my-3">
+            <form action="" class="form-group">
+                <label for="ville">Ville:</label>
+                <input type="text" class="form-control" id="inputCity">
+                <button type="submit" class="btn btn-info btn-block">Rechercher</button>
+            </form>
+        </article>
+        <article class="col-12 col-sm-6 d-flex justify-content-center my-3">
+<div class="box-container">
+    <div id="ville"></div>
+    <div id="pays"></div>
+    <div id="temperature"></div>
+    <div id="humidite"></div>
+    <div id="vent"></div>
+</div>
+        </article>
+    </section>
 
 
-
-<script src="bootstrap-5.3.3/dist/js/bootstrap.min.js"></script>
-<script src="index.js"></script>
+    <script src="bootstrap-5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="index.js"></script> -->
 </body>
+
 </html>
