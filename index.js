@@ -8,7 +8,7 @@ let api = function(city){
     console.log(data);
     document.querySelector('#ville').innerHTML = `Ville: ` + "<br\/>" + "<br\/>" + data.name;
     document.querySelector('#pays').innerHTML = `Pays : ` + "<br\/>" + "<br\/>" + data.sys.country;
-    document.querySelector('#temperature').innerHTML = data.main.temp + `°` + "<br\/>" + "<br\/>" + data.weather[0].description;
+    document.querySelector('#temperature').innerHTML =`Degrès : ` + data.main.temp + `°` + "<br\/>" + "<br\/>" + data.weather[0].description;
     document.querySelector('#humidite').innerHTML = `Humidité : ` + "<br\/>" + "<br\/>" + data.main.humidity + '%';
     document.querySelector('#vent').innerHTML = `Vent : ` + "<br\/>" + "<br\/>" + data.wind.speed + ' km/h';
    }) 

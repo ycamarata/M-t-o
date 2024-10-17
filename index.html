@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,62 +8,34 @@
 </head>
 
 <body>
-    <header
-        class="bg-body-success border-bottom border-top border-success m-5 mt-1 d-flex justify-content-center text-center">
-        <h1>
-            Météo du jour:</h1>
+    <header class="border-bottom border-top border-info m-5 mt-1 d-flex justify-content-center text-center">
+        <h1>Météo du jour:</h1>
     </header>
 
-    <!--<div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-sm-6 my-3">
-                <form>
-                    <div class="form-group">
-                        <label for="Ville">Ville :</label>
-                        <input type="text" class="form-control" id="inputCity">
+    <main class="row justify-content-center m-3">
+        <section>
+            <article class="d-flex justify-content-center">
+                <form class="d-block justify-content-center">
+                    <div class="form-group text-center m-1">
+                        <label for="Ville" class="display-6"><strong>Ville :</strong></label>
+                        <input type="text" class="form-control m-2" id="inputCity">
                     </div>
 
-                    <button type="submit" class="btn btn-info">
-                        Rechercher
-                    </button>
-                </form>
-            </div>
-            <div class="col-12 col-sm-6 d-flex justify-content-center my-3">
-                <div class="box-container">
-                    <div id="ville" class="card"></div>
-                    <div id="pays" class="card"></div>
-                    <div id="temperature" class="card"></div>
-                    <div id="humidite" class="card"></div>
-                    <div id="vent" class="card"></div>
-                </div>
-
-            </div>
-        </div>
-    </div> -->
-
-    <main class="row justify-content-center m-5">
-        <section >
-            <article>
-                <form>
-                    <div class="form-group">
-                        <label for="Ville">Ville :</label>
-                        <input type="text" class="form-control" id="inputCity">
-                    </div>
-
-                    <button type="submit" class="btn btn-info">
+                    <button type="submit" class="btn btn-info d-flex justify-content-center m-2 w-100">
                         Rechercher
                     </button>
                 </form>
             </article>
         </section>
+
         <section>
             <article >
-                <div class="row justify-content-center text-center m-5">
-                    <div id="ville" class="card card-body m-2 col-sm-4 m-4 w-25 bg-light"></div>
-                    <div id="pays" class="card card-body m-2 col-sm-4 m-4 w-25 bg-light"></div>
-                    <div id="temperature" class="card card-body m-2 col-sm-4 m-4 w-25 bg-light"></div>
-                    <div id="humidite" class="card card-body m-2 col-sm-4 m-4 w-25 bg-light"></div>
-                    <div id="vent" class="card card-body m-2 col-sm-4 m-4 w-25 bg-light"></div>
+                <div class="row justify-content-center text-center m-3">
+                    <div id="ville" class="card card-body border-info m-2 col-sm-4 m-4 w-25 bg-light"></div>
+                    <div id="pays" class="card card-body border-info m-2 col-sm-4 m-4 w-25 bg-light"></div>
+                    <div id="temperature" class="card card-body border-info m-2 col-sm-4 m-4 w-25 bg-light"></div>
+                    <div id="humidite" class="card card-body border-info m-2 col-sm-4 m-4 w-25 bg-light"></div>
+                    <div id="vent" class="card card-body border-info m-2 col-sm-4 m-4 w-25 bg-light"></div>
                 </div>
             </article>
         </section>
